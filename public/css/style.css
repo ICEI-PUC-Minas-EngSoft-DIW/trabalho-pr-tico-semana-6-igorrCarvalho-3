@@ -13,15 +13,8 @@ body {
 /* ========== HEADER ========== */
 
 .header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    gap: 10px;
     padding: 10px 20px;
     background-color: #202020;
-    position: sticky;
-    top: 0;
     z-index: 10;
 }
 
@@ -32,16 +25,12 @@ body {
 }
 
 .header_search {
-    display: flex;
-    flex: 1;
-    min-width: 180px;
     max-width: 500px;
 }
 
 .header_search input {
     padding: 6px 12px;
     width: 100%;
-    max-width: 300px;
     border: 1px solid #555;
     background-color: #121212;
     color: #fff;
@@ -56,25 +45,17 @@ body {
     cursor: pointer;
 }
 
-.header_actions {
-    display: flex;
-    gap: 8px;
-}
-
 .header_btn {
-    padding: 6px 12px;
     border: 1px solid #555;
     background-color: #303030;
     color: #fff;
     cursor: pointer;
+    font-size: 13px;
 }
 
 /* ========== NAV TABS ========== */
 
 .nav_tabs {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
     padding: 12px 0;
     background-color: #202020;
     border-bottom: 1px solid #333;
@@ -92,27 +73,14 @@ body {
     border-bottom: 2px solid #fff;
 }
 
-/* ========== CONTAINER ========== */
-
-.container {
-    display: flex;
-}
-
 /* ========== SIDEBAR ========== */
 
 .sidebar {
-    width: 200px;
-    min-height: calc(100vh - 110px);
     background-color: #202020;
-    padding: 16px 0;
-    position: sticky;
-    top: 52px;
-    align-self: flex-start;
 }
 
 .sidebar_menu {
     list-style: none;
-    margin-bottom: 24px;
 }
 
 .sidebar_item a {
@@ -125,8 +93,7 @@ body {
 
 .sidebar_item_active a {
     color: #fff;
-    border-left: 3px solid #fff;
-    padding-left: 17px;
+    background-color: #303030;
 }
 
 .sidebar_item a:hover {
@@ -135,12 +102,13 @@ body {
 
 /* ========== LOGIN FORM ========== */
 
-.sidebar_login {
+.sidebar_login,
+.sidebar_subscriptions {
     padding: 0 20px;
-    margin-bottom: 20px;
 }
 
-.sidebar_login h3 {
+.sidebar_login h3,
+.sidebar_subscriptions h3 {
     font-size: 13px;
     color: #aaa;
     margin-bottom: 10px;
@@ -174,16 +142,6 @@ body {
     background-color: #5fb8ff;
 }
 
-.sidebar_subscriptions {
-    padding: 0 20px;
-}
-
-.sidebar_subscriptions h3 {
-    font-size: 13px;
-    color: #aaa;
-    margin-bottom: 12px;
-}
-
 .sidebar_sub_list {
     list-style: none;
 }
@@ -201,40 +159,16 @@ body {
     border-radius: 50%;
 }
 
-/* ========== MAIN CONTENT ========== */
-
-.content {
-    flex: 1;
-    padding: 20px 24px;
-}
-
 /* ========== VIDEO SECTION ========== */
-
-.video_section {
-    margin-bottom: 32px;
-}
 
 .video_section_title {
     font-size: 18px;
     margin-bottom: 16px;
 }
 
-.video_section_grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-    gap: 20px;
-}
-
-/* ========== VIDEO CARD ========== */
-
-.video_card {
-    width: 100%;
-}
-
 .video_card_thumb {
     width: 100%;
     aspect-ratio: 16 / 9;
-    height: auto;
     object-fit: cover;
     display: block;
     background-color: #303030;
@@ -265,95 +199,4 @@ body {
     font-size: 13px;
     color: #777;
     border-top: 1px solid #333;
-}
-
-/* ========== RESPONSIVO ========== */
-
-/* Tablet (até 900px): sidebar mais estreita */
-@media (max-width: 900px) {
-    .sidebar {
-        width: 160px;
-    }
-
-    .header_search input {
-        max-width: 100%;
-    }
-
-    .content {
-        padding: 16px;
-    }
-}
-
-/* Mobile (até 700px): sidebar vira topo, layout em coluna */
-@media (max-width: 700px) {
-    .header {
-        justify-content: center;
-        text-align: center;
-    }
-
-    .header_search {
-        order: 3;
-        flex-basis: 100%;
-        max-width: none;
-    }
-
-    .nav_tabs {
-        gap: 12px;
-        font-size: 13px;
-    }
-
-    .container {
-        flex-direction: column;
-    }
-
-    .sidebar {
-        width: 100%;
-        min-height: auto;
-        position: static;
-        padding: 12px 0;
-    }
-
-    .sidebar_menu {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 4px;
-        margin-bottom: 16px;
-    }
-
-    .sidebar_item a {
-        padding: 6px 12px;
-    }
-
-    .sidebar_item_active a {
-        border-left: none;
-        border-bottom: 2px solid #fff;
-        padding-left: 12px;
-    }
-
-    .sidebar_login,
-    .sidebar_subscriptions {
-        display: none;
-    }
-
-    .video_section_grid {
-        grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
-        gap: 14px;
-    }
-}
-
-/* Mobile pequeno (até 420px): 1 coluna de vídeos */
-@media (max-width: 420px) {
-    .header_actions {
-        gap: 4px;
-    }
-
-    .header_btn {
-        padding: 6px 8px;
-        font-size: 12px;
-    }
-
-    .video_section_grid {
-        grid-template-columns: 1fr;
-    }
 }
