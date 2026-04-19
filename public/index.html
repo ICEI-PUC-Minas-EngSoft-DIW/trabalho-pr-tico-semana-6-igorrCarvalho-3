@@ -1,12 +1,174 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="./css/style.css">
+    <title>VideoTube</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    
+
+    <header class="header">
+        <div class="header__logo">Logo</div>
+
+        <form class="header__search" action="#" method="get">
+            <input type="text" name="q" placeholder="search...">
+            <button type="submit">Buscar</button>
+        </form>
+
+        <div class="header__actions">
+            <button class="header__btn">Upload</button>
+            <button class="header__btn">Noti.</button>
+            <button class="header__btn">Sett.</button>
+        </div>
+    </header>
+
+    <nav class="nav-tabs">
+        <a class="nav-tabs__link nav-tabs__link--active" href="#">Home</a>
+        <a class="nav-tabs__link" href="#">Trending</a>
+        <a class="nav-tabs__link" href="#">Subscription</a>
+    </nav>
+
+    <div class="container">
+
+        <nav class="sidebar">
+            <ul class="sidebar__menu">
+                <li class="sidebar__item sidebar__item--active"><a href="#">Home</a></li>
+                <li class="sidebar__item"><a href="#">My Channel</a></li>
+                <li class="sidebar__item"><a href="#">Trending</a></li>
+                <li class="sidebar__item"><a href="#">Subscription</a></li>
+                <li class="sidebar__item"><a href="#">History</a></li>
+                <li class="sidebar__item"><a href="#">Watch Later</a></li>
+            </ul>
+
+            <section class="sidebar__login">
+                <h3>Login</h3>
+                <form class="login-form" action="#" method="post">
+                    <input class="login-form__input" type="text" name="username" placeholder="Usuário">
+                    <input class="login-form__input" type="password" name="password" placeholder="Senha">
+                    <button class="login-form__btn" type="submit">Entrar</button>
+                </form>
+            </section>
+
+            <section class="sidebar__subscriptions">
+                <h3>Subscriptions</h3>
+                <ul class="sidebar__sub-list">
+                    <li class="sidebar__sub-item">
+                        <img src="https://picsum.photos/id/64/24/24" alt="avatar"> Channel 1
+                    </li>
+                    <li class="sidebar__sub-item">
+                        <img src="https://picsum.photos/id/65/24/24" alt="avatar"> Channel 2
+                    </li>
+                    <li class="sidebar__sub-item">
+                        <img src="https://picsum.photos/id/66/24/24" alt="avatar"> Channel 3
+                    </li>
+                    <li class="sidebar__sub-item">
+                        <img src="https://picsum.photos/id/67/24/24" alt="avatar"> Channel 4
+                    </li>
+                </ul>
+            </section>
+        </nav>
+
+        <main class="content">
+
+            <section class="video-section">
+                <h2 class="video-section__title">Recommended</h2>
+                <div class="video-section__grid">
+
+                    <article class="video-card">
+                        <img class="video-card__thumb" src="https://picsum.photos/id/10/320/180" alt="thumbnail">
+                        <h3 class="video-card__title">This is the video title</h3>
+                        <p class="video-card__channel">Mr. uploader</p>
+                        <p class="video-card__meta">100 views · 1 month ago</p>
+                    </article>
+
+                    <article class="video-card">
+                        <img class="video-card__thumb" src="https://picsum.photos/id/20/320/180" alt="thumbnail">
+                        <h3 class="video-card__title">Exploring the mountains</h3>
+                        <p class="video-card__channel">Adventure TV</p>
+                        <p class="video-card__meta">2.4k views · 2 weeks ago</p>
+                    </article>
+
+                    <article class="video-card">
+                        <img class="video-card__thumb" src="https://picsum.photos/id/30/320/180" alt="thumbnail">
+                        <h3 class="video-card__title">Cooking at home</h3>
+                        <p class="video-card__channel">Chef Online</p>
+                        <p class="video-card__meta">540 views · 3 days ago</p>
+                    </article>
+
+                    <article class="video-card">
+                        <img class="video-card__thumb" src="https://picsum.photos/id/40/320/180" alt="thumbnail">
+                        <h3 class="video-card__title">City night walk</h3>
+                        <p class="video-card__channel">Urban Walks</p>
+                        <p class="video-card__meta">1.2k views · 5 days ago</p>
+                    </article>
+
+                    <article class="video-card">
+                        <img class="video-card__thumb" src="https://picsum.photos/id/50/320/180" alt="thumbnail">
+                        <h3 class="video-card__title">Learn CSS basics</h3>
+                        <p class="video-card__channel">Code Academy</p>
+                        <p class="video-card__meta">3k views · 1 week ago</p>
+                    </article>
+
+                </div>
+            </section>
+
+            <section class="video-section">
+                <h2 class="video-section__title">Recently uploaded</h2>
+                <div class="video-section__grid">
+
+                    <article class="video-card">
+                        <img class="video-card__thumb" src="https://picsum.photos/id/60/320/180" alt="thumbnail">
+                        <h3 class="video-card__title">Morning routine</h3>
+                        <p class="video-card__channel">Daily Vlogs</p>
+                        <p class="video-card__meta">80 views · 2 hours ago</p>
+                    </article>
+
+                    <article class="video-card">
+                        <img class="video-card__thumb" src="https://picsum.photos/id/70/320/180" alt="thumbnail">
+                        <h3 class="video-card__title">Guitar tutorial</h3>
+                        <p class="video-card__channel">Music Hub</p>
+                        <p class="video-card__meta">45 views · 4 hours ago</p>
+                    </article>
+
+                    <article class="video-card">
+                        <img class="video-card__thumb" src="https://picsum.photos/id/80/320/180" alt="thumbnail">
+                        <h3 class="video-card__title">Sunset timelapse</h3>
+                        <p class="video-card__channel">Nature Films</p>
+                        <p class="video-card__meta">200 views · 6 hours ago</p>
+                    </article>
+
+                    <article class="video-card">
+                        <img class="video-card__thumb" src="https://picsum.photos/id/90/320/180" alt="thumbnail">
+                        <h3 class="video-card__title">Book review</h3>
+                        <p class="video-card__channel">Read More</p>
+                        <p class="video-card__meta">30 views · 8 hours ago</p>
+                    </article>
+
+                    <article class="video-card">
+                        <img class="video-card__thumb" src="https://picsum.photos/id/100/320/180" alt="thumbnail">
+                        <h3 class="video-card__title">Travel tips</h3>
+                        <p class="video-card__channel">Globetrotter</p>
+                        <p class="video-card__meta">150 views · 10 hours ago</p>
+                    </article>
+
+                    <article class="video-card">
+                        <img class="video-card__thumb" src="https://picsum.photos/id/110/320/180" alt="thumbnail">
+                        <h3 class="video-card__title">Fitness workout</h3>
+                        <p class="video-card__channel">Fit Life</p>
+                        <p class="video-card__meta">90 views · 12 hours ago</p>
+                    </article>
+
+                </div>
+            </section>
+
+        </main>
+
+    </div>
+
+    <footer class="footer">
+        <p>&copy; 2026 VideoTube. Todos os direitos reservados.</p>
+    </footer>
+
 </body>
 </html>
