@@ -9,26 +9,29 @@
 </head>
 <body>
 
-    <header class="header d-flex flex-wrap align-items-center justify-content-center justify-content-md-between text-center text-md-start gap-2 sticky-top">
-        <div class="header_logo">Logo</div>
+    <header class="sticky-top">
+        <div class="header d-flex flex-wrap align-items-center justify-content-center justify-content-md-between text-center text-md-start gap-2">
+            <div class="header_logo">Logo</div>
 
-        <form class="header_search d-flex order-last order-md-0 w-100 w-md-auto flex-md-grow-1 mx-md-3" action="#" method="get">
-            <input type="text" name="q" placeholder="search...">
-            <button type="submit">Buscar</button>
-        </form>
+            <form class="header_search d-flex order-last order-md-0 w-100 w-md-auto flex-md-grow-1 mx-md-3" action="#" method="get">
+                <input type="text" name="q" placeholder="search...">
+                <button type="submit">Buscar</button>
+            </form>
 
-        <div class="header_actions d-flex gap-1 gap-sm-2">
-            <button class="header_btn px-2 px-sm-3 py-1">Upload</button>
-            <button class="header_btn px-2 px-sm-3 py-1">Noti.</button>
-            <button class="header_btn px-2 px-sm-3 py-1">Sett.</button>
+            <div class="header_actions d-flex gap-1 gap-sm-2">
+                <button class="header_btn px-2 px-sm-3 py-1">Upload</button>
+                <button class="header_btn px-2 px-sm-3 py-1">Noti.</button>
+                <button class="header_btn px-2 px-sm-3 py-1">Sett.</button>
+            </div>
         </div>
-    </header>
 
-    <nav class="nav_tabs d-flex justify-content-center gap-3 gap-md-4">
-        <a class="nav_tabs_link nav_tabs_link_active" href="#">Home</a>
-        <a class="nav_tabs_link" href="#">Trending</a>
-        <a class="nav_tabs_link" href="#">Subscription</a>
-    </nav>
+        <nav class="nav_tabs d-flex justify-content-center gap-3 gap-md-4">
+            <a class="nav_tabs_link nav_tabs_link_active" href="#home">Home</a>
+            <a class="nav_tabs_link" href="#trending">Trending</a>
+            <a class="nav_tabs_link" href="#subscription">Subscription</a>
+            <a class="nav_tabs_link" href="#my-channel">My Channel</a>
+        </nav>
+    </header>
 
     <div class="container-fluid">
         <div class="row g-0">
