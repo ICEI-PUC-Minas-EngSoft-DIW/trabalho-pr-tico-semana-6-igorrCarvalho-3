@@ -25,20 +25,20 @@ body {
     z-index: 10;
 }
 
-.header__logo {
+.header_logo {
     border: 1px solid #555;
     padding: 6px 16px;
     font-size: 14px;
 }
 
-.header__search {
+.header_search {
     display: flex;
     flex: 1;
     min-width: 180px;
     max-width: 500px;
 }
 
-.header__search input {
+.header_search input {
     padding: 6px 12px;
     width: 100%;
     max-width: 300px;
@@ -48,7 +48,7 @@ body {
     outline: none;
 }
 
-.header__search button {
+.header_search button {
     padding: 6px 14px;
     border: 1px solid #555;
     background-color: #303030;
@@ -56,12 +56,12 @@ body {
     cursor: pointer;
 }
 
-.header__actions {
+.header_actions {
     display: flex;
     gap: 8px;
 }
 
-.header__btn {
+.header_btn {
     padding: 6px 12px;
     border: 1px solid #555;
     background-color: #303030;
@@ -71,7 +71,7 @@ body {
 
 /* ========== NAV TABS ========== */
 
-.nav-tabs {
+.nav_tabs {
     display: flex;
     justify-content: center;
     gap: 20px;
@@ -80,14 +80,14 @@ body {
     border-bottom: 1px solid #333;
 }
 
-.nav-tabs__link {
+.nav_tabs_link {
     color: #aaa;
     text-decoration: none;
     padding: 4px 8px;
     font-size: 14px;
 }
 
-.nav-tabs__link--active {
+.nav_tabs_link_active {
     color: #fff;
     border-bottom: 2px solid #fff;
 }
@@ -110,12 +110,12 @@ body {
     align-self: flex-start;
 }
 
-.sidebar__menu {
+.sidebar_menu {
     list-style: none;
     margin-bottom: 24px;
 }
 
-.sidebar__item a {
+.sidebar_item a {
     display: block;
     padding: 8px 20px;
     color: #aaa;
@@ -123,36 +123,36 @@ body {
     font-size: 14px;
 }
 
-.sidebar__item--active a {
+.sidebar_item_active a {
     color: #fff;
     border-left: 3px solid #fff;
     padding-left: 17px;
 }
 
-.sidebar__item a:hover {
+.sidebar_item a:hover {
     background-color: #303030;
 }
 
 /* ========== LOGIN FORM ========== */
 
-.sidebar__login {
+.sidebar_login {
     padding: 0 20px;
     margin-bottom: 20px;
 }
 
-.sidebar__login h3 {
+.sidebar_login h3 {
     font-size: 13px;
     color: #aaa;
     margin-bottom: 10px;
 }
 
-.login-form {
+.login_form {
     display: flex;
     flex-direction: column;
     gap: 8px;
 }
 
-.login-form__input {
+.login_form_input {
     padding: 6px 10px;
     border: 1px solid #555;
     background-color: #121212;
@@ -161,7 +161,7 @@ body {
     outline: none;
 }
 
-.login-form__btn {
+.login_form_btn {
     padding: 8px;
     border: none;
     background-color: #3ea6ff;
@@ -170,25 +170,25 @@ body {
     cursor: pointer;
 }
 
-.login-form__btn:hover {
+.login_form_btn:hover {
     background-color: #5fb8ff;
 }
 
-.sidebar__subscriptions {
+.sidebar_subscriptions {
     padding: 0 20px;
 }
 
-.sidebar__subscriptions h3 {
+.sidebar_subscriptions h3 {
     font-size: 13px;
     color: #aaa;
     margin-bottom: 12px;
 }
 
-.sidebar__sub-list {
+.sidebar_sub_list {
     list-style: none;
 }
 
-.sidebar__sub-item {
+.sidebar_sub_item {
     display: flex;
     align-items: center;
     gap: 8px;
@@ -197,7 +197,7 @@ body {
     color: #ccc;
 }
 
-.sidebar__sub-item img {
+.sidebar_sub_item img {
     border-radius: 50%;
 }
 
@@ -210,16 +210,16 @@ body {
 
 /* ========== VIDEO SECTION ========== */
 
-.video-section {
+.video_section {
     margin-bottom: 32px;
 }
 
-.video-section__title {
+.video_section_title {
     font-size: 18px;
     margin-bottom: 16px;
 }
 
-.video-section__grid {
+.video_section_grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
     gap: 20px;
@@ -227,11 +227,11 @@ body {
 
 /* ========== VIDEO CARD ========== */
 
-.video-card {
+.video_card {
     width: 100%;
 }
 
-.video-card__thumb {
+.video_card_thumb {
     width: 100%;
     aspect-ratio: 16 / 9;
     height: auto;
@@ -240,18 +240,18 @@ body {
     background-color: #303030;
 }
 
-.video-card__title {
+.video_card_title {
     font-size: 13px;
     margin-top: 8px;
     margin-bottom: 4px;
 }
 
-.video-card__channel {
+.video_card_channel {
     font-size: 12px;
     color: #aaa;
 }
 
-.video-card__meta {
+.video_card_meta {
     font-size: 11px;
     color: #777;
 }
@@ -275,7 +275,7 @@ body {
         width: 160px;
     }
 
-    .header__search input {
+    .header_search input {
         max-width: 100%;
     }
 
@@ -291,13 +291,13 @@ body {
         text-align: center;
     }
 
-    .header__search {
+    .header_search {
         order: 3;
         flex-basis: 100%;
         max-width: none;
     }
 
-    .nav-tabs {
+    .nav_tabs {
         gap: 12px;
         font-size: 13px;
     }
@@ -313,7 +313,7 @@ body {
         padding: 12px 0;
     }
 
-    .sidebar__menu {
+    .sidebar_menu {
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
@@ -321,22 +321,22 @@ body {
         margin-bottom: 16px;
     }
 
-    .sidebar__item a {
+    .sidebar_item a {
         padding: 6px 12px;
     }
 
-    .sidebar__item--active a {
+    .sidebar_item_active a {
         border-left: none;
         border-bottom: 2px solid #fff;
         padding-left: 12px;
     }
 
-    .sidebar__login,
-    .sidebar__subscriptions {
+    .sidebar_login,
+    .sidebar_subscriptions {
         display: none;
     }
 
-    .video-section__grid {
+    .video_section_grid {
         grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
         gap: 14px;
     }
@@ -344,16 +344,16 @@ body {
 
 /* Mobile pequeno (até 420px): 1 coluna de vídeos */
 @media (max-width: 420px) {
-    .header__actions {
+    .header_actions {
         gap: 4px;
     }
 
-    .header__btn {
+    .header_btn {
         padding: 6px 8px;
         font-size: 12px;
     }
 
-    .video-section__grid {
+    .video_section_grid {
         grid-template-columns: 1fr;
     }
 }
