@@ -15,12 +15,12 @@ No trabalho dessa semana vamos alterar o projeto para que a responsividade da ho
 
 ## Print da versão responsiva com Bootstrap [DESKTOP]
 
-![DESKTOP](public/images/videotube_desktop_print.png)
+![DESKTOP](public/images/VIDEOTUBE_DESKTOP_IMAGE.png)
 
 
 ## Print da versão responsiva com Bootstrap [MOBILE] (*)
 
-![MOBILE](public/images/print_mobile.png)
+![MOBILE](public/images/VIDEOTUBE_MOBILE_IMAGE.png)
 
 
 (*) Utilize as ferramentas do desenvolvedor do seu navegador para colocar no modo reponsivo, escolha um celular qualquer e recarregue a página antes de tirar o print. 
