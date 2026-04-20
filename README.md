@@ -8,18 +8,19 @@ No trabalho dessa semana vamos alterar o projeto para que a responsividade da ho
 
 ## Informações Gerais
 
-- Nome:
-- Matricula:
-- Proposta de projeto escolhida:
-- Breve descrição sobre seu projeto:
+- Nome: Igor Costa Carvalho Campos Silva
+- Matricula: 767375
+- Proposta de projeto escolhida: Temas e Conteúdos Associados
+- Breve descrição sobre seu projeto: Aplicação web inspirada em plataformas de vídeos, onde os conteúdos são organizados por categorias. Os temas representam as categorias e os conteúdos são os vídeos, permitindo navegação e visualização de forma simples e organizada.
 
 ## Print da versão responsiva com Bootstrap [DESKTOP]
 
-<<  COLOQUE A IMAGEM AQUI >>
+![DESKTOP](public/images/videotube_desktop_print.png)
+
 
 ## Print da versão responsiva com Bootstrap [MOBILE] (*)
 
-<<  COLOQUE A IMAGEM AQUI >>
+![MOBILE](public/images/print_mobile.png)
 
 
 (*) Utilize as ferramentas do desenvolvedor do seu navegador para colocar no modo reponsivo, escolha um celular qualquer e recarregue a página antes de tirar o print. 
