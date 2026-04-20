@@ -25,7 +25,7 @@
             </div>
         </div>
 
-        <nav class="nav_tabs d-flex justify-content-center gap-3 gap-md-4">
+        <nav class="nav_tabs d-flex d-lg-none justify-content-center gap-3 gap-md-4">
             <a class="nav_tabs_link nav_tabs_link_active" href="#home">Home</a>
             <a class="nav_tabs_link" href="#trending">Trending</a>
             <a class="nav_tabs_link" href="#subscription">Subscription</a>
@@ -36,8 +36,8 @@
     <div class="container-fluid">
         <div class="row g-0">
 
-            <nav class="sidebar col-12 col-lg-2 py-2 py-lg-3">
-                <ul class="sidebar_menu d-flex d-lg-block flex-wrap justify-content-center gap-1 m-0 mb-lg-4">
+            <nav class="sidebar col-lg-2 d-none d-lg-block py-3">
+                <ul class="sidebar_menu m-0 mb-4">
                     <li class="sidebar_item sidebar_item_active"><a href="#home">Home</a></li>
                     <li class="sidebar_item"><a href="#my-channel">My Channel</a></li>
                     <li class="sidebar_item"><a href="#trending">Trending</a></li>
@@ -46,7 +46,7 @@
                     <li class="sidebar_item"><a href="#">Watch Later</a></li>
                 </ul>
 
-                <section class="sidebar_login d-none d-lg-block mb-3">
+                <section class="sidebar_login mb-3">
                     <h3>Login</h3>
                     <form class="login_form" action="#" method="post">
                         <input class="login_form_input" type="text" name="username" placeholder="Usuário">
@@ -55,7 +55,7 @@
                     </form>
                 </section>
 
-                <section class="sidebar_subscriptions d-none d-lg-block">
+                <section class="sidebar_subscriptions">
                     <h3>Subscriptions</h3>
                     <ul class="sidebar_sub_list">
                         <li class="sidebar_sub_item">
