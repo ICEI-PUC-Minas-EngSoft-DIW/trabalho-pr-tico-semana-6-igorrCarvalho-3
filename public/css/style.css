@@ -161,6 +161,10 @@ body {
 
 /* ========== VIDEO SECTION ========== */
 
+.video_section {
+    scroll-margin-top: 100px;
+}
+
 .video_section_title {
     font-size: 18px;
     margin-bottom: 16px;

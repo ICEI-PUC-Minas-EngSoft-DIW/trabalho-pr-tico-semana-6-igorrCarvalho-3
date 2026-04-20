@@ -38,10 +38,10 @@
 
             <nav class="sidebar col-12 col-lg-2 py-2 py-lg-3">
                 <ul class="sidebar_menu d-flex d-lg-block flex-wrap justify-content-center gap-1 m-0 mb-lg-4">
-                    <li class="sidebar_item sidebar_item_active"><a href="#">Home</a></li>
-                    <li class="sidebar_item"><a href="#">My Channel</a></li>
-                    <li class="sidebar_item"><a href="#">Trending</a></li>
-                    <li class="sidebar_item"><a href="#">Subscription</a></li>
+                    <li class="sidebar_item sidebar_item_active"><a href="#home">Home</a></li>
+                    <li class="sidebar_item"><a href="#my-channel">My Channel</a></li>
+                    <li class="sidebar_item"><a href="#trending">Trending</a></li>
+                    <li class="sidebar_item"><a href="#subscription">Subscription</a></li>
                     <li class="sidebar_item"><a href="#">History</a></li>
                     <li class="sidebar_item"><a href="#">Watch Later</a></li>
                 </ul>
@@ -76,92 +76,113 @@
 
             <main class="content col-12 col-lg-10 p-3 p-lg-4">
 
-                <section class="video_section mb-4">
-                    <h2 class="video_section_title">Recommended</h2>
+                <section id="home" class="video_section mb-4">
+                    <h2 class="video_section_title">Home</h2>
                     <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-3">
 
                         <article class="video_card col">
-                                <img class="video_card_thumb" src="https://picsum.photos/id/10/320/180" alt="thumbnail">
-                                <h3 class="video_card_title">This is the video title</h3>
-                                <p class="video_card_channel">Mr. uploader</p>
-                                <p class="video_card_meta">100 views · 1 month ago</p>
+                            <img class="video_card_thumb" src="https://picsum.photos/id/10/320/180" alt="thumbnail">
+                            <h3 class="video_card_title">This is the video title</h3>
+                            <p class="video_card_channel">Mr. uploader</p>
+                            <p class="video_card_meta">100 views · 1 month ago</p>
                         </article>
 
                         <article class="video_card col">
-                                <img class="video_card_thumb" src="https://picsum.photos/id/20/320/180" alt="thumbnail">
-                                <h3 class="video_card_title">Exploring the mountains</h3>
-                                <p class="video_card_channel">Adventure TV</p>
-                                <p class="video_card_meta">2.4k views · 2 weeks ago</p>
+                            <img class="video_card_thumb" src="https://picsum.photos/id/20/320/180" alt="thumbnail">
+                            <h3 class="video_card_title">Exploring the mountains</h3>
+                            <p class="video_card_channel">Adventure TV</p>
+                            <p class="video_card_meta">2.4k views · 2 weeks ago</p>
                         </article>
 
                         <article class="video_card col">
-                                <img class="video_card_thumb" src="https://picsum.photos/id/30/320/180" alt="thumbnail">
-                                <h3 class="video_card_title">Cooking at home</h3>
-                                <p class="video_card_channel">Chef Online</p>
-                                <p class="video_card_meta">540 views · 3 days ago</p>
-                        </article>
-
-                        <article class="video_card col">
-                                <img class="video_card_thumb" src="https://picsum.photos/id/40/320/180" alt="thumbnail">
-                                <h3 class="video_card_title">City night walk</h3>
-                                <p class="video_card_channel">Urban Walks</p>
-                                <p class="video_card_meta">1.2k views · 5 days ago</p>
-                        </article>
-
-                        <article class="video_card col">
-                                <img class="video_card_thumb" src="https://picsum.photos/id/50/320/180" alt="thumbnail">
-                                <h3 class="video_card_title">Learn CSS basics</h3>
-                                <p class="video_card_channel">Code Academy</p>
-                                <p class="video_card_meta">3k views · 1 week ago</p>
+                            <img class="video_card_thumb" src="https://picsum.photos/id/30/320/180" alt="thumbnail">
+                            <h3 class="video_card_title">Cooking at home</h3>
+                            <p class="video_card_channel">Chef Online</p>
+                            <p class="video_card_meta">540 views · 3 days ago</p>
                         </article>
 
                     </div>
                 </section>
 
-                <section class="video_section mb-4">
-                    <h2 class="video_section_title">Recently uploaded</h2>
+                <section id="trending" class="video_section mb-4">
+                    <h2 class="video_section_title">Trending</h2>
                     <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-3">
 
                         <article class="video_card col">
-                                <img class="video_card_thumb" src="https://picsum.photos/id/60/320/180" alt="thumbnail">
-                                <h3 class="video_card_title">Morning routine</h3>
-                                <p class="video_card_channel">Daily Vlogs</p>
-                                <p class="video_card_meta">80 views · 2 hours ago</p>
+                            <img class="video_card_thumb" src="https://picsum.photos/id/40/320/180" alt="thumbnail">
+                            <h3 class="video_card_title">City night walk</h3>
+                            <p class="video_card_channel">Urban Walks</p>
+                            <p class="video_card_meta">1.2k views · 5 days ago</p>
                         </article>
 
                         <article class="video_card col">
-                                <img class="video_card_thumb" src="https://picsum.photos/id/70/320/180" alt="thumbnail">
-                                <h3 class="video_card_title">Guitar tutorial</h3>
-                                <p class="video_card_channel">Music Hub</p>
-                                <p class="video_card_meta">45 views · 4 hours ago</p>
+                            <img class="video_card_thumb" src="https://picsum.photos/id/50/320/180" alt="thumbnail">
+                            <h3 class="video_card_title">Learn CSS basics</h3>
+                            <p class="video_card_channel">Code Academy</p>
+                            <p class="video_card_meta">3k views · 1 week ago</p>
                         </article>
 
                         <article class="video_card col">
-                                <img class="video_card_thumb" src="https://picsum.photos/id/80/320/180" alt="thumbnail">
-                                <h3 class="video_card_title">Sunset timelapse</h3>
-                                <p class="video_card_channel">Nature Films</p>
-                                <p class="video_card_meta">200 views · 6 hours ago</p>
+                            <img class="video_card_thumb" src="https://picsum.photos/id/60/320/180" alt="thumbnail">
+                            <h3 class="video_card_title">Morning routine</h3>
+                            <p class="video_card_channel">Daily Vlogs</p>
+                            <p class="video_card_meta">80 views · 2 hours ago</p>
+                        </article>
+
+                    </div>
+                </section>
+
+                <section id="subscription" class="video_section mb-4">
+                    <h2 class="video_section_title">Subscription</h2>
+                    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-3">
+
+                        <article class="video_card col">
+                            <img class="video_card_thumb" src="https://picsum.photos/id/70/320/180" alt="thumbnail">
+                            <h3 class="video_card_title">Guitar tutorial</h3>
+                            <p class="video_card_channel">Music Hub</p>
+                            <p class="video_card_meta">45 views · 4 hours ago</p>
                         </article>
 
                         <article class="video_card col">
-                                <img class="video_card_thumb" src="https://picsum.photos/id/90/320/180" alt="thumbnail">
-                                <h3 class="video_card_title">Book review</h3>
-                                <p class="video_card_channel">Read More</p>
-                                <p class="video_card_meta">30 views · 8 hours ago</p>
+                            <img class="video_card_thumb" src="https://picsum.photos/id/80/320/180" alt="thumbnail">
+                            <h3 class="video_card_title">Sunset timelapse</h3>
+                            <p class="video_card_channel">Nature Films</p>
+                            <p class="video_card_meta">200 views · 6 hours ago</p>
                         </article>
 
                         <article class="video_card col">
-                                <img class="video_card_thumb" src="https://picsum.photos/id/100/320/180" alt="thumbnail">
-                                <h3 class="video_card_title">Travel tips</h3>
-                                <p class="video_card_channel">Globetrotter</p>
-                                <p class="video_card_meta">150 views · 10 hours ago</p>
+                            <img class="video_card_thumb" src="https://picsum.photos/id/90/320/180" alt="thumbnail">
+                            <h3 class="video_card_title">Book review</h3>
+                            <p class="video_card_channel">Read More</p>
+                            <p class="video_card_meta">30 views · 8 hours ago</p>
+                        </article>
+
+                    </div>
+                </section>
+
+                <section id="my-channel" class="video_section mb-4">
+                    <h2 class="video_section_title">My Channel</h2>
+                    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-3">
+
+                        <article class="video_card col">
+                            <img class="video_card_thumb" src="https://picsum.photos/id/100/320/180" alt="thumbnail">
+                            <h3 class="video_card_title">Travel tips</h3>
+                            <p class="video_card_channel">Globetrotter</p>
+                            <p class="video_card_meta">150 views · 10 hours ago</p>
                         </article>
 
                         <article class="video_card col">
-                                <img class="video_card_thumb" src="https://picsum.photos/id/110/320/180" alt="thumbnail">
-                                <h3 class="video_card_title">Fitness workout</h3>
-                                <p class="video_card_channel">Fit Life</p>
-                                <p class="video_card_meta">90 views · 12 hours ago</p>
+                            <img class="video_card_thumb" src="https://picsum.photos/id/110/320/180" alt="thumbnail">
+                            <h3 class="video_card_title">Fitness workout</h3>
+                            <p class="video_card_channel">Fit Life</p>
+                            <p class="video_card_meta">90 views · 12 hours ago</p>
+                        </article>
+
+                        <article class="video_card col">
+                            <img class="video_card_thumb" src="https://picsum.photos/id/120/320/180" alt="thumbnail">
+                            <h3 class="video_card_title">My first vlog</h3>
+                            <p class="video_card_channel">Me</p>
+                            <p class="video_card_meta">12 views · 1 day ago</p>
                         </article>
 
                     </div>
